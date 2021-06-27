@@ -1,4 +1,5 @@
 # Detection project
+![image](https://static.tildacdn.com/tild6636-3531-4239-b465-376364646465/Deep_Learning_School.png)
 
 Проект представляет собой результат выполнения домашнего задания в ходе обучения в DLS.
 Текущая версия репозитория позволяет пользователю протестировать качество работы нейросетевого детектора YOLOv3, обученного на датасетах [1](https://github.com/ari-dasci/OD-WeaponDetection) и [2](https://makeml.app/datasets/pistol) детектировать ножи и пистолеты.  
