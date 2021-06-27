@@ -24,5 +24,4 @@ class detector:
 
         img = mmcv.imread('./static/uploads/test_pic.png')
         result = inference_detector(model, img)
-        show_result_pyplot(model, img, result)
         model.show_result(img, result, show=False, out_file='./static/uploads/result_img.png', thickness=4)

@@ -1,10 +1,7 @@
 from flask import Flask, render_template, redirect, url_for
-
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileRequired, FileAllowed
-from wtforms import StringField, PasswordField, BooleanField, SubmitField
-from wtforms.validators import DataRequired
-
+from wtforms import SubmitField
 from werkzeug.utils import secure_filename
 import os
 import detector
@@ -68,4 +65,4 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000)
