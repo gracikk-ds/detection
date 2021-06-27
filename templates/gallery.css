@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<head>
+<style>
+div.gallery {
+   line-height:1;
+   -webkit-column-count:5; /* split it into 5 columns */
+   -webkit-column-gap:7px; /* give it a 5px gap between columns */
+   -moz-column-count:5;
+   -moz-column-gap:7px;
+   column-count:5;
+   column-gap:7px;
+}
+
+div.gallery img {
+   width: 100% !important;
+   height: auto !important;
+   margin-bottom: 7px; /* to match column gap */
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
+    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Cinque Terre">
+  </a>
+  <div class="desc">Киса 1 </div>
+
+   <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
+    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+  </a>
+  <div class="desc">Киса 2</div>
+
+  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
+    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+  </a>
+  <div class="desc">Киса 3</div>
+
+  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
+    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+  </a>
+  <div class="desc">Киса 4</div>
+
+  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
+    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+  </a>
+  <div class="desc">Киса 4</div>
+
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
+    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Cinque Terre">
+  </a>
+  <div class="desc">Киса 1</div>
+
+   <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
+    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+  </a>
+  <div class="desc">Киса 2</div>
+
+  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
+    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+  </a>
+  <div class="desc">Киса 3</div>
+
+  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
+    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+  </a>
+  <div class="desc">Киса 4</div>
+
+  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
+    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+  </a>
+  <div class="desc">Киса 5</div>
+
+</div>
+
+</body>
+{% endblock %}

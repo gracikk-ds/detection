@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+<style>
+div.desc {
+    height:300px;
+    width:45%;
+    float:left;
+    padding:5px; }
+
+div.sidebar_left {
+    height:300px;
+    width:32%;
+    float:left;
+    padding:5px;
+}
+
+div.sidebar_right {
+    height:300px;
+    width:20%;
+    float:left;
+    padding:5px;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="banner" align="center">
+        <img src="https://static.tildacdn.com/tild6636-3531-4239-b465-376364646465/Deep_Learning_School.png" width=500>
+    </div>
+
+    <h3 style="text-align: center;">
+        <b>Физтех-Школа Прикладной математики и информатики (ФПМИ) МФТИ</b>
+    </h3>
+
+    <h2 style="text-align: center;">
+        <b>Object detection project</b>
+    </h2>
+
+    <p style="text-align: center;">
+        <i>Руководитель проекта: Илья Захаркин | @ilyazakharkin</i>
+    </p>
+
+    <p style="text-align: center;">
+        <i>Автор: Александр Гордеев | @gracikk</i>
+    </p>
+
+    <p style="text-align: center;">
+        Ссылка на github: <a href="https://github.com/gracikk-finance/detection_project"> detector repo</a>
+    </p>
+
+    <div class="sidebar_left">
+
+    </div>
+
+    <div class="desc">
+        <p> <b>Описание проекта:</b> </p>
+
+        <p>
+            Текущая версия проекта позволяет пользователю протестировать
+            качество работы нейросетевого детектора YOLOv3 <br>
+            Детектор обучен распознавать образы <a href="https://makeml.app/datasets/pistol"> пистолетов</a>
+            и <a href="https://github.com/ari-dasci/OD-WeaponDetection"> ножей</a>.
+        </p>
+
+        <p>
+            В разделе <a href="/css">Галерея</a> можно ознакомиться с примерами фото, с которыми может работать детектор. <br>
+            Для тестирования детектора необходимо загрузить выбранное вами фото в разделе <a href="/upload">Тест</a> <br>
+            После успешной загрузки вы будете перенаправлены на страницу, визуализирующую работу детектора </p>
+
+    </div>
+
+    <div class="sidebar_right">
+
+    </div>
+
+</body>
+{% endblock %}

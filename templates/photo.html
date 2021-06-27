@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="banner" align="center">
+        <img src="https://static.tildacdn.com/tild6636-3531-4239-b465-376364646465/Deep_Learning_School.png" width=500>
+    </div>
+
+    <h1 style="text-align: center;">
+        Upload photo for detection
+    </h1>
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        <div  align="center">
+            {{ form.hidden_tag() }}
+            {{ form.photo }}
+            {{ form.submit }}
+        </div>
+    </form>
+{% endblock %}
