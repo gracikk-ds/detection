@@ -21,5 +21,5 @@
   2.2 Построение структуры демо  
   2.3 Встраивание детектора в демо  
   
-Весь перечень работ, описанный выше, доступен в папке [demo]((https://github.com/gracikk-finance/detection/tree/main/demo) этого репозитория
+Весь перечень работ, описанный выше, доступен в папке [demo](https://github.com/gracikk-finance/detection/tree/main/demo) этого репозитория
 В папке [screenshots](https://github.com/gracikk-finance/detection/tree/main/screens) представлен перечень скринов демо
