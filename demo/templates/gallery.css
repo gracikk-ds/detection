@@ -15,14 +15,41 @@ div.gallery {
 }
 
 div.gallery img {
-   width: 100% !important;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: auto !important;
+   height: 300 !important;
+   margin-bottom: 7px; /* to match column gap */
+}
+
+div.gallery_1 {
+   line-height:1;
+   -webkit-column-count:2; /* split it into 5 columns */
+   -webkit-column-gap:7px; /* give it a 5px gap between columns */
+   -moz-column-count:5;
+   -moz-column-gap:7px;
+   column-count:5;
+   column-gap:7px;
+}
+
+div.gallery_1 img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 500 !important;
    height: auto !important;
    margin-bottom: 7px; /* to match column gap */
 }
 
-div.desc {
-  padding: 15px;
+div.desc_1 {
   text-align: center;
+  padding: 15px;
+}
+
+div.desc_2 {
+  text-align: center;
+  padding: 15px;
 }
 
 </style>
@@ -30,58 +57,43 @@ div.desc {
 <body>
 
 <div class="gallery">
-  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
-    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Cinque Terre">
+  <a target="_blank" href="{{ url_for('static', filename='bad_guys.jpg') }}">
+    <img src="{{ url_for('static', filename='bad_guys.jpg') }}" alt="bad_guys">
   </a>
-  <div class="desc">Киса 1 </div>
+  <div class="desc_1">Bad Guys</div>
 
-   <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
-    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+   <a target="_blank" href="{{ url_for('static', filename='girl_face.jpg') }}">
+    <img src="{{ url_for('static', filename='girl_face.jpg') }}" alt="girl_face">
   </a>
-  <div class="desc">Киса 2</div>
+  <div class="desc_1">Girl</div>
 
-  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
-    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+  <a target="_blank" href="{{ url_for('static', filename='lara.png') }}">
+    <img src="{{ url_for('static', filename='lara.png') }}" alt="lara">
   </a>
-  <div class="desc">Киса 3</div>
+  <div class="desc_1">Lara</div>
 
-  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
-    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+  <a target="_blank" href="{{ url_for('static', filename='agelina.jpg') }}">
+    <img src="{{ url_for('static', filename='agelina.jpg') }}" alt="agelina">
   </a>
-  <div class="desc">Киса 4</div>
+  <div class="desc_1">Angelina</div>
 
-  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
-    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+  <a target="_blank" href="{{ url_for('static', filename='sin.jpg') }}">
+    <img src="{{ url_for('static', filename='sin.jpg') }}" alt="Forest">
   </a>
-  <div class="desc">Киса 4</div>
+  <div class="desc_1">sin</div>
 
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
-    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Cinque Terre">
+<div class="gallery_1">
+  <a target="_blank" href="{{ url_for('static', filename='pistols.jpg') }}">
+    <img src="{{ url_for('static', filename='pistols.jpg') }}" alt="pistols">
   </a>
-  <div class="desc">Киса 1</div>
+  <div class="desc_2">Pistols</div>
 
-   <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
-    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
+   <a target="_blank" href="{{ url_for('static', filename='knifes.jpg') }}">
+    <img src="{{ url_for('static', filename='knifes.jpg') }}" alt="knifes">
   </a>
-  <div class="desc">Киса 2</div>
-
-  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
-    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
-  </a>
-  <div class="desc">Киса 3</div>
-
-  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
-    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
-  </a>
-  <div class="desc">Киса 4</div>
-
-  <a target="_blank" href="{{ url_for('static', filename='Kitty_2.jpg') }}">
-    <img src="{{ url_for('static', filename='Kitty_2.jpg') }}" alt="Forest">
-  </a>
-  <div class="desc">Киса 5</div>
+  <div class="desc_2">Knifes</div>
 
 </div>
 

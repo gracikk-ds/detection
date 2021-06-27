@@ -4,7 +4,7 @@
 
 <head>
 <style>
-div.gallery {
+div.inf {
    line-height:1;
    -webkit-column-count:2; /* split it into 5 columns */
    -webkit-column-gap:7px; /* give it a 5px gap between columns */
@@ -14,10 +14,14 @@ div.gallery {
    column-gap:10px;
 }
 
-div.gallery img {
-   width: 100% !important;
+div.inf img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 400px !important;
    height: auto !important;
    margin-bottom: 7px; /* to match column gap */
+   horizontal-align: center;
 }
 
 div.desc {
@@ -25,18 +29,20 @@ div.desc {
   text-align: center;
 }
 
+
+
 </style>
 </head>
 <body>
 
-<div class="gallery">
+<div class="inf">
   <a target="_blank" href="{{ url_for('static', filename='uploads/test_pic.png') }}">
-    <img src="{{ url_for('static', filename='uploads/test_pic.png') }}" alt="Kitty_1">
+    <img src="{{ url_for('static', filename='uploads/test_pic.png') }}" alt="test">
   </a>
   <div class="desc">Оригинал </div>
 
    <a target="_blank" href="{{ url_for('static', filename='uploads/result_img.png') }}">
-    <img src="{{ url_for('static', filename='uploads/result_img.png') }}" alt="Kitty_2">
+    <img src="{{ url_for('static', filename='uploads/result_img.png') }}" alt="result" >
   </a>
   <div class="desc">Результат работы детектора</div>
 </div>
